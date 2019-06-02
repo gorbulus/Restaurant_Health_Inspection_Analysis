@@ -33,14 +33,12 @@ soup = make_soup(url)
 # Some variable for display examples
 restaurant = ""
 
-# TODO - turn in to a function once the site is known
-# (Too many examples here to nail to one function just now)
+# Find all tr rows
 for record in soup.findAll("tr"):
 	# Print every table row
 	print(record.text)
 
-
-# Commented out for Hoshi and True - Works with the Health Dept Page
+# Find all data for each tr record
 for data in record.findAll("td"):
 	# Print all cell data
 	restaurant = restaurant +","+ data.text
