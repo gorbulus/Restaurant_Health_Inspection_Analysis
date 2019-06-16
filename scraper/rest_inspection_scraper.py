@@ -33,6 +33,7 @@ soup = make_soup(url)
 # Some variable for display examples
 restaurant = ""
 
+# Turn in to function
 # Find all tr rows
 for record in soup.findAll("tr"):
 	# Print every table row
