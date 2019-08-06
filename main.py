@@ -15,6 +15,7 @@ def main():
     
     # Restaurant Inspections - Duval County
     # Attempting with one county at first - plan to implement a zip code search 
+    
     url =  "https://data.tallahassee.com/restaurant-inspections/duval/list/"
     
     # Make the soup!
